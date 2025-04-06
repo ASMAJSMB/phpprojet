@@ -1,0 +1,154 @@
+body {
+    font-family: 'Lato', sans-serif;
+    background-color: #f9c784;
+    color: #4E598C;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #4e598c;
+    padding: 1em 0;
+}
+
+header nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+header nav ul li {
+    margin: 0 1em;
+}
+
+header nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+header nav ul li a:hover {
+    text-decoration: underline;
+}
+
+main {
+    padding: 2em;
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: #ffffff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1, h2 {
+    color: #4e598c;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1em;
+}
+
+table, th, td {
+    border: 1px solid #4e598c;
+}
+
+th, td {
+    padding: 0.5em;
+    text-align: left;
+}
+
+th {
+    background-color: #4e598c;
+    color: #ffffff;
+}
+
+td a {
+    color: #4e598c;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+td a:hover {
+    text-decoration: underline;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    background-color: #ffffff;
+    padding: 2cm;
+    border: 1px solid #4e598c;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+label {
+    font-weight: bold;
+    color: #4e598c;
+}
+
+input[type="text"], input[type="number"] {
+    padding: 0.5em;
+    border: 1px solid #4e598c;
+    border-radius: 5px;
+}
+
+button {
+    padding: 0.5em 1em;
+    background-color: #4e598c;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #3d4a76;
+}
+
+footer {
+    background-color: #4e598c;
+    color: #ffffff;
+    text-align: center;
+    padding: 1em 0;
+    position: fixed;
+    width: 100%;
+    height: cm;
+    bottom: 0;
+}
+
+
+.dashboard {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.card {
+    background-color: #f4f4f4;
+    padding: 40px;
+    border-radius: 10px;
+    width: 150px;
+    height: 150px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 36px;
+    font-weight: bold;
+    color: #007BFF;
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card:active {
+    transform: translateY(2px);
+}

@@ -1,0 +1,14 @@
+{
+    "name": "username/project2",
+    "description": "Galerie Oselo Administration",
+    "authors": [
+        {
+            "name": "Your Name",
+            "email": "your.email@example.com"
+        }
+    ],
+    "require": {
+        "php": ">=7.4",
+        "ext-pdo": "*"
+    }
+}
