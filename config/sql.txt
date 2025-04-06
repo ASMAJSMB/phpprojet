@@ -1,0 +1,25 @@
+-- Création de la base de données
+CREATE DATABASE IF NOT EXISTS galerie_osello;
+USE galerie_osello;
+
+-- Table des entrepôts (Warehouse)
+CREATE TABLE warehouse (
+    id_warehouse INT AUTO_INCREMENT PRIMARY KEY,
+    name_warehouse VARCHAR(100) NOT NULL,
+    address_warehouse VARCHAR(255) NOT NULL
+);
+
+-- Table des peintures (Painting)
+CREATE TABLE painting (
+    id_painting INT AUTO_INCREMENT PRIMARY KEY,
+    title_painting VARCHAR(100) NOT NULL,
+    artist_name VARCHAR(100) NOT NULL,
+    production_year YEAR NOT NULL,
+    width FLOAT NOT NULL,
+    height FLOAT NOT NULL,
+    id_warehouse INT,
+    FOREIGN KEY (id_warehouse) REFERENCES warehouse(id_warehouse)
+        ON DELETE SET NULL
+        ON UPDATE CASCADE
+);
+la jai mmis le code pour créer la base de donnée moi je lai fait manuellement merci 
